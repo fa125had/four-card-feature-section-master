@@ -167,20 +167,22 @@ body {
 @media only screen and (max-width: 810px) {
     .container {
         height: 100%;
-        overflow: scroll;
+        overflow: auto;
         flex-direction: column;
 
         .cardsMasterComponent {
-            max-width: $mobile;
+            width: $mobile;
+            height: auto;
+
             header {
-                width: 100%;
-                max-width: $mobile;
+                width: $mobile;
+                max-width: 90%;
                 padding-block: 3rem;
 
                 h1 {
                     @include extraLightFont();
                     color: $color_neutral_grayishBlue;
-                    font-size: 1.7rem;
+                    font-size: 1.6rem;
                     padding-inline: 1rem;
                     padding-top: 1rem;
 
@@ -189,14 +191,13 @@ body {
                 h2 {
                     @include semiBoldFont();
                     color: $color_neutral_veryDarkBlue;
-                    font-size: 1.7rem;
+                    font-size: 1.6rem;
                 }
 
                 p {
                     @include regularFont();
                     color: $color_neutral_grayishBlue;
-                    // padding-block-end: 1rem;
-                    padding-inline: 2rem;
+                    padding-inline: 1.5rem;
 
                 }
 
@@ -212,14 +213,16 @@ body {
 
                 .cardSpan {
                     height: auto;
+                    align-items: center;
                 }
 
                 .card {
                     background-color: #fff;
-                    box-shadow: 0px 1rem 1rem hsl(234deg 14% 80%);
+                    box-shadow: 0px 0.9rem 2rem hsl(0deg 0% 57%);
                     border-radius: .3rem;
                     margin: 1rem;
-                    width: $mobile;
+                    max-width: 93.5%;
+                    width: 95%;
                     height: calc($mobile - 100px);
                     display: grid;
                     grid-template-rows: 1fr 1fr 2fr;
@@ -242,7 +245,7 @@ body {
                         grid-column-end: 3;
                         grid-row-start: 2;
                         align-self: start;
-                        padding-left: 2rem;
+                        padding: 0 2rem;
 
                     }
 
@@ -255,6 +258,7 @@ body {
 
 
                 }
+
             }
         }
 

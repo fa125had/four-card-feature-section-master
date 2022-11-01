@@ -124,22 +124,23 @@ body {
 @media only screen and (max-width: 810px) {
   .container {
     height: 100%;
-    overflow: scroll;
+    overflow: auto;
     flex-direction: column;
   }
   .container .cardsMasterComponent {
-    max-width: 375px;
+    width: 375px;
+    height: auto;
   }
   .container .cardsMasterComponent header {
-    width: 100%;
-    max-width: 375px;
+    width: 375px;
+    max-width: 90%;
     padding-block: 3rem;
   }
   .container .cardsMasterComponent header h1 {
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     color: hsl(229deg, 6%, 66%);
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     padding-inline: 1rem;
     padding-top: 1rem;
   }
@@ -147,13 +148,13 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     color: hsl(234deg, 12%, 34%);
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
   .container .cardsMasterComponent header p {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     color: hsl(229deg, 6%, 66%);
-    padding-inline: 2rem;
+    padding-inline: 1.5rem;
   }
   .container .cardsMasterComponent .cards {
     flex-direction: column;
@@ -165,13 +166,15 @@ body {
   }
   .container .cardsMasterComponent .cards .cardSpan {
     height: auto;
+    align-items: center;
   }
   .container .cardsMasterComponent .cards .card {
     background-color: #fff;
-    box-shadow: 0px 1rem 1rem hsl(234deg, 14%, 80%);
+    box-shadow: 0px 0.9rem 2rem hsl(0deg, 0%, 57%);
     border-radius: 0.3rem;
     margin: 1rem;
-    width: 375px;
+    max-width: 93.5%;
+    width: 95%;
     height: 275px;
     display: grid;
     grid-template-rows: 1fr 1fr 2fr;
@@ -195,7 +198,7 @@ body {
     grid-column-end: 3;
     grid-row-start: 2;
     align-self: start;
-    padding-left: 2rem;
+    padding: 0 2rem;
   }
   .container .cardsMasterComponent .cards .card img {
     grid-column-start: 2;
